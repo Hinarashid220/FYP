@@ -22,7 +22,15 @@ Multi-temporal (2021–2025) solar panel satellite segmentation pipeline, datase
 │   ├── cnn.ipynb                 # CNN U-Net (ResNet-34) training notebook
 │   ├── rcnn.ipynb                # Mask R-CNN (Detectron2) training notebook
 │   ├── yolo11.ipynb              # YOLO11m-seg training & temporal analysis
-│   └── test.ipynb                # Unified 3-model side-by-side inference tester
+├── Training results/
+│   ├── weights/
+│   │   ├── yolo11m_best.pt       # YOLO11m-seg best model weights
+│   │   ├── mask_rcnn_final.pth   # Mask R-CNN final model weights
+│   │   └── best_cnn_unet.pth     # CNN U-Net best model weights
+│   ├── cnn_unet_results.zip      # CNN U-Net training plots & metrics
+│   ├── mask_rcnn_evaluation_results.zip # Mask R-CNN evaluation logs & metrics
+│   └── yolo11m_solar_complete_results.zip # YOLO complete training runs
+├── .gitattributes                # Git LFS configuration
 ├── .gitignore
 └── README.md
 ```
